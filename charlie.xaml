@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_37Base.charlie"
+             Title="charlie">
+    <VerticalStackLayout Padding="30,0" Spacing="25">
+        <Button
+        VerticalOptions="Center"
+        Text="Pre-Launch"
+        TextColor="White"
+        BackgroundColor="#D8142E"
+        BorderColor="#D8142E"
+        BorderWidth="1.5"
+        CornerRadius="50"
+        Clicked="Pre_Clicked">
+        </Button>
+
+        <Button
+        VerticalOptions="Center"
+        Text="Housing"
+        TextColor="White"
+        BackgroundColor="#D8142E"
+        BorderColor="#D8142E"
+        BorderWidth="1.5"
+        CornerRadius="50"
+        Clicked="Housing_Clicked">
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_37Base.Login">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Image
+                Source="loginhead.png"
+                HeightRequest="280"
+                Aspect="AspectFit"/>
+
+            <Label
+                Text="Login"
+                FontAttributes="Bold"
+                FontSize="26"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <Label x:Name="Error_Message" TextColor="#D8142E" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Entry x:Name="txtUsername" Placeholder="Username" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Password" IsPassword="True" TextColor="Black" PlaceholderColor="Gray"></Entry>
+
+            <Button
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="White"
+                BackgroundColor="#D8142E"
+                BorderColor="#D8142E"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="Login_Clicked">
+            </Button>
+
+            <Label
+                Text="For use by NSRI Station 37 Crew only"
+                FontAttributes="Bold"
+                FontSize="12"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Padding="15"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
